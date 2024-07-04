@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Diary</string>
+
+    <string name="main_toolbar_calendar_title">calendar</string>
+    <string name="main_toolbar_settings_title">settings</string>
+
+
+    <string name="edit_item_select_edit_text_title">select the record type</string>
+    <string name="edit_item_toolbar_done_title">done</string>
+    <string name="edit_item_type_button_text">type: none</string>
+    <string name="edit_item_edit_text_hint">enter the text</string>
+    <string name="select_type_add_type_button_text">Add new Type</string>
+    <string name="add_new_type_edit_text_hint">enter type\'s name</string>
+    <string name="add_new_type_choose_type_color_button">choose the type color</string>
+    <string name="settings_notifications_text_view">notifications</string>
+    <string name="settings_sleep_text_view">sleep</string>
+    <string name="settings_about_button_text">about</string>
+    <string name="settings_language_button">language</string>
+    <string name="notification_settings_sleep_text_view">specify the sleep period when notifications will not work:</string>
+    <string name="notification_settings_notify_every_hour_text_view">notify every hour</string>
+    <string name="notification_settings_beginning_of_sleep">the beginning of sleep:</string>
+    <string name="notification_settings_end_of_sleep">the end of sleep:</string>
+    <string name="notification_settings_all_sleep_text_view">sleep lasts from</string>
 </resources>

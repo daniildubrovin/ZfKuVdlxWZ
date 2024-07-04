@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            app:cardCornerRadius="4dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/notification_settings_notify_every_hour_text_view"
+                    android:textStyle="bold"
+                    style="@style/Main_text_view"
+                    android:layout_marginStart="@dimen/secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notification_settings_notify_every_hour_text_view"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/notification_settings_notify_every_hour_switch"
+                    android:layout_marginEnd="@dimen/secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:theme="@style/notification_switch_style"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:text="@string/notification_settings_sleep_text_view"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/secondary"
+            android:layout_marginTop="@dimen/main"
+            android:textColor="@color/black"
+            android:textSize="8pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/notification_settings_beginning_of_sleep"
+                android:text="@string/notification_settings_beginning_of_sleep"
+                android:textSize="8pt"
+                android:layout_margin="@dimen/secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/notification_settings_beginning_of_sleep_value_text_view"
+                style="@style/Main_text_view"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/beginning_sleep_slider"
+            android:layout_margin="@dimen/secondary"
+            android:value="23"
+            android:stepSize="1.0"
+            android:valueFrom="1"
+            android:valueTo="24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/notification_settings_end_of_sleep"
+                android:text="@string/notification_settings_end_of_sleep"
+                android:textSize="8pt"
+                android:layout_margin="@dimen/secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/notification_settings_end_of_sleep_value_text_view"
+                style="@style/Main_text_view"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/end_sleep_slider"
+            android:layout_margin="@dimen/secondary"
+            android:value="7"
+            android:stepSize="1.0"
+            android:valueFrom="1"
+            android:valueTo="24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/notification_settings_all_sleep_text_view"
+            android:text="@string/notification_settings_all_sleep_text_view"
+            android:textStyle="bold"
+            style="@style/Main_text_view"
+            android:layout_margin="@dimen/secondary"
+            android:layout_marginTop="@dimen/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

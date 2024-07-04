@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_new_type_select_color_button"
+        android:text="@string/add_new_type_choose_type_color_button"
+        android:layout_margin="@dimen/secondary"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/add_new_type_edit_text"
+        android:hint="@string/add_new_type_edit_text_hint"
+        android:layout_margin="@dimen/secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:importantForAutofill="no" />
+
+</LinearLayout>
